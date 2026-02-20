@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hubungi Kami - CV. Batu Usaha Mandiri</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <!-- Material Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0f65bd",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden">
+    <div class="relative flex flex-col min-h-screen w-full">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Logo Section -->
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-white">
+                            <span class="material-symbols-outlined text-2xl">construction</span>
+                        </div>
+                        <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+                            CV. Batu Usaha Mandiri
+                        </h1>
+                    </div>
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                            href="index.html">Home</a>
+                        <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                            href="about.html">About Us</a>
+                        <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                            href="products.html">Produk</a>
+                        <a class="text-sm font-medium text-primary dark:text-primary transition-colors"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    <!-- CTA Button -->
+                    <div class="hidden md:block">
+                        <a href="tel:+622145678900"
+                            class="inline-flex items-center justify-center h-10 px-6 font-bold text-sm text-white transition-colors bg-primary rounded-lg hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
+                            <span class="material-symbols-outlined text-sm mr-2">call</span>
+                            <span>(021) 456-7890</span>
+                        </a>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <button
+                        class="md:hidden p-2 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="relative w-full bg-slate-900 text-white py-24 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
+            <div class="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/30 text-white text-xs font-bold tracking-wide mb-6 uppercase">
+                    Hubungi Kami
+                </span>
+                <h1 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Mari Berkonsultasi</h1>
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+                    Kami siap membantu kebutuhan material konstruksi Anda dengan layanan terbaik
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="py-12 bg-white dark:bg-background-dark -mt-12 relative z-10">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Phone Card -->
+                    <div
+                        class="bg-background-light dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 hover:border-primary dark:hover:border-primary transition-all group">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">call</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Telepon</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-3">Hubungi kami untuk informasi
+                            lengkap</p>
+                        <a href="tel:+622145678900"
+                            class="text-primary font-semibold hover:underline">(021) 456-7890</a><br />
+                        <a href="tel:+628123456789" class="text-primary font-semibold hover:underline">+62 812-3456-789
+                            (WA)</a>
+                    </div>
+                    <!-- Email Card -->
+                    <div
+                        class="bg-background-light dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 hover:border-primary dark:hover:border-primary transition-all group">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">mail</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Email</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-3">Kirimkan pertanyaan Anda via email
+                        </p>
+                        <a href="mailto:info@batuusahamandiri.id"
+                            class="text-primary font-semibold hover:underline">info@batuusahamandiri.id</a><br />
+                        <a href="mailto:sales@batuusahamandiri.id"
+                            class="text-primary font-semibold hover:underline">sales@batuusahamandiri.id</a>
+                    </div>
+                    <!-- Location Card -->
+                    <div
+                        class="bg-background-light dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 hover:border-primary dark:hover:border-primary transition-all group">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">location_on</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Lokasi</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-3">Kunjungi kantor kami</p>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">Jl. Raya Industri No. 123<br />Kawasan
+                            Industri, Jakarta Timur<br />13920, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Map -->
+        <section class="py-20 bg-background-light dark:bg-[#0b1219]">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div>
+                        <div class="mb-8">
+                            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Kirim Pesan</h2>
+                            <p class="text-slate-600 dark:text-slate-400">
+                                Isi form di bawah ini dan tim kami akan merespons dalam waktu 24 jam
+                            </p>
+                        </div>
+                        <form class="space-y-6">
+                            <!-- Name Input -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2"
+                                    for="name">
+                                    Nama Lengkap <span class="text-red-500">*</span>
+                                </label>
+                                <input
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                                    id="name" name="name" placeholder="Masukkan nama lengkap Anda" required
+                                    type="text" />
+                            </div>
+                            <!-- Email Input -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2"
+                                    for="email">
+                                    Email <span class="text-red-500">*</span>
+                                </label>
+                                <input
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                                    id="email" name="email" placeholder="nama@contoh.com" required type="email" />
+                            </div>
+                            <!-- Phone Input -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2"
+                                    for="phone">
+                                    Nomor Telepon <span class="text-red-500">*</span>
+                                </label>
+                                <input
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                                    id="phone" name="phone" placeholder="+62 812-3456-7890" required type="tel" />
+                            </div>
+                            <!-- Subject Input -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2"
+                                    for="subject">
+                                    Subjek
+                                </label>
+                                <select
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                                    id="subject" name="subject">
+                                    <option value="">Pilih subjek pertanyaan</option>
+                                    <option value="info-produk">Informasi Produk</option>
+                                    <option value="harga">Pertanyaan Harga</option>
+                                    <option value="pengiriman">Informasi Pengiriman</option>
+                                    <option value="kerjasama">Kerjasama Bisnis</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            <!-- Message Input -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2"
+                                    for="message">
+                                    Pesan <span class="text-red-500">*</span>
+                                </label>
+                                <textarea
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+                                    id="message" name="message" placeholder="Tuliskan pesan Anda di sini..." required
+                                    rows="5"></textarea>
+                            </div>
+                            <!-- Submit Button -->
+                            <button
+                                class="w-full h-12 px-8 rounded-lg bg-primary hover:bg-primary-dark text-white font-bold text-base transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary/25"
+                                type="submit">
+                                <span class="material-symbols-outlined">send</span>
+                                Kirim Pesan
+                            </button>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 text-center">
+                                Dengan mengirim pesan ini, Anda menyetujui <a class="text-primary hover:underline"
+                                    href="#">kebijakan privasi</a> kami
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Map & Business Hours -->
+                    <div class="space-y-8">
+                        <!-- Google Maps -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Lokasi Kami</h3>
+                            <div class="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700"
+                                style="height: 400px;">
+                                <!-- Google Maps Embed - Ganti dengan koordinat lokasi Anda -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666666666667!2d106.895!3d-6.2088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMzEuNyJTIDEwNsKwNTMnNDIuMCJF!5e0!3m2!1sid!2sid!4v1234567890123!5m2!1sid!2sid"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="mt-4 flex items-start gap-3 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">info</span>
+                                <p>
+                                    <strong class="text-slate-900 dark:text-white">Petunjuk Arah:</strong><br />
+                                    Dari Terminal Pulogadung, ambil arah ke Jl. Pulo Gebang. Kantor kami berada di
+                                    Kawasan Industri sebelah kanan jalan, dekat dengan SPBU.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div
+                            class="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-700">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Jam Operasional</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-600 dark:text-slate-400">Senin - Jumat</span>
+                                    <span class="font-semibold text-slate-900 dark:text-white">08:00 - 17:00 WIB</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-600 dark:text-slate-400">Sabtu</span>
+                                    <span class="font-semibold text-slate-900 dark:text-white">08:00 - 14:00 WIB</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-600 dark:text-slate-400">Minggu & Libur Nasional</span>
+                                    <span class="font-semibold text-red-500">Tutup</span>
+                                </div>
+                            </div>
+                            <div
+                                class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700 flex items-start gap-3 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">schedule</span>
+                                <p>Untuk pemesanan urgent atau di luar jam operasional, silakan hubungi WhatsApp kami.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Methods -->
+        <section class="py-16 bg-white dark:bg-background-dark">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Cara Lain Menghubungi Kami</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Pilih metode yang paling nyaman untuk Anda</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/628123456789"
+                        class="group flex items-center gap-4 p-6 rounded-xl bg-green-50 dark:bg-green-900/20 border-2 border-green-200 dark:border-green-800 hover:border-green-500 dark:hover:border-green-500 transition-all">
+                        <div
+                            class="w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-slate-900 dark:text-white mb-1">WhatsApp</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Chat langsung dengan tim kami</p>
+                        </div>
+                        <span class="material-symbols-outlined text-green-500 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+
+                    <!-- Telepon -->
+                    <a href="tel:+622145678900"
+                        class="group flex items-center gap-4 p-6 rounded-xl bg-blue-50 dark:bg-blue-900/20 border-2 border-blue-200 dark:border-blue-800 hover:border-blue-500 dark:hover:border-blue-500 transition-all">
+                        <div
+                            class="w-14 h-14 rounded-full bg-blue-500 text-white flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">call</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-slate-900 dark:text-white mb-1">Telepon</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Hubungi hotline kami segera</p>
+                        </div>
+                        <span class="material-symbols-outlined text-blue-500 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:info@batuusahamandiri.id"
+                        class="group flex items-center gap-4 p-6 rounded-xl bg-orange-50 dark:bg-orange-900/20 border-2 border-orange-200 dark:border-orange-800 hover:border-orange-500 dark:hover:border-orange-500 transition-all">
+                        <div
+                            class="w-14 h-14 rounded-full bg-orange-500 text-white flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">mail</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-slate-900 dark:text-white mb-1">Email</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Kirim pertanyaan detail via email</p>
+                        </div>
+                        <span class="material-symbols-outlined text-orange-500 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (Optional) -->
+        <section class="py-20 bg-background-light dark:bg-[#0b1219]">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Pertanyaan yang Sering Diajukan
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        Temukan jawaban cepat untuk pertanyaan umum sebelum menghubungi kami
+                    </p>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <details
+                        class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
+                            <h3 class="font-bold text-slate-900 dark:text-white">Berapa minimal order untuk pembelian?
+                            </h3>
+                            <span
+                                class="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
+                            Minimal order untuk pasir dan batu split adalah 1 Dump Truck (sekitar 5-6 m³). Untuk paving
+                            block, minimal order adalah 1 palet (50 m²).
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 2 -->
+                    <details
+                        class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
+                            <h3 class="font-bold text-slate-900 dark:text-white">Apakah ada biaya pengiriman?</h3>
+                            <span
+                                class="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
+                            Biaya pengiriman gratis untuk area Jakarta Timur dan sekitarnya dengan minimal pembelian
+                            tertentu. Untuk area lain, biaya pengiriman akan dihitung berdasarkan jarak dan volume
+                            barang.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 3 -->
+                    <details
+                        class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
+                            <h3 class="font-bold text-slate-900 dark:text-white">Berapa lama estimasi pengiriman?</h3>
+                            <span
+                                class="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
+                            Untuk area Jabodetabek, estimasi pengiriman adalah 1-3 hari kerja setelah pembayaran
+                            dikonfirmasi. Untuk area luar Jabodetabek, estimasi 3-7 hari kerja tergantung lokasi.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 4 -->
+                    <details
+                        class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
+                            <h3 class="font-bold text-slate-900 dark:text-white">Metode pembayaran apa saja yang
+                                diterima?</h3>
+                            <span
+                                class="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
+                            Kami menerima transfer bank (BCA, Mandiri, BNI), cash on delivery (COD) untuk area tertentu,
+                            dan sistem tempo untuk pelanggan korporat yang sudah terdaftar.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="bg-background-light dark:bg-[#0b1219] pt-16 pb-8 border-t border-slate-200 dark:border-slate-800">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <!-- Brand Column -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="flex items-center justify-center w-8 h-8 rounded-md bg-primary text-white">
+                                <span class="material-symbols-outlined text-lg">construction</span>
+                            </div>
+                            <h2 class="text-lg font-bold text-slate-900 dark:text-white">CV. Batu Usaha Mandiri</h2>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Mitra terpercaya dalam penyediaan material konstruksi berkualitas.
+                        </p>
+                    </div>
+                    <!-- Links Column -->
+                    <div>
+                        <h3 class="text-slate-900 dark:text-white font-bold mb-6">Navigasi</h3>
+                        <ul class="flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-400">
+                            <li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="about.html">Tentang Kami</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="products.html">Produk</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="contact.html">Kontak</a></li>
+                        </ul>
+                    </div>
+                    <!-- Products Column -->
+                    <div>
+                        <h3 class="text-slate-900 dark:text-white font-bold mb-6">Produk</h3>
+                        <ul class="flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-400">
+                            <li><a class="hover:text-primary transition-colors" href="products.html">Paving Block</a>
+                            </li>
+                            <li><a class="hover:text-primary transition-colors" href="products.html">Pasir Split</a>
+                            </li>
+                            <li><a class="hover:text-primary transition-colors" href="products.html">Batu Split</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Column -->
+                    <div>
+                        <h3 class="text-slate-900 dark:text-white font-bold mb-6">Kontak</h3>
+                        <ul class="flex flex-col gap-4 text-sm text-slate-600 dark:text-slate-400">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">location_on</span>
+                                <span>Jl. Raya Industri No. 123, Jakarta Timur</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">call</span>
+                                <span>(021) 456-7890</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">mail</span>
+                                <span>info@batuusahamandiri.id</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-500">
+                    <p>© 2024 CV. Batu Usaha Mandiri. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

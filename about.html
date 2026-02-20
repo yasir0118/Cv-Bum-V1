@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tentang Kami - CV. Batu Usaha Mandiri</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <!-- Material Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0f65bd",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden">
+    <div class="relative flex flex-col min-h-screen w-full">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Logo Section -->
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-white">
+                            <span class="material-symbols-outlined text-2xl">construction</span>
+                        </div>
+                        <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+                            CV. Batu Usaha Mandiri
+                        </h1>
+                    </div>
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                            href="index.html">Home</a>
+                        <a class="text-sm font-medium text-primary dark:text-primary transition-colors"
+                            href="about.html">About Us</a>
+                        <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                            href="products.html">Produk</a>
+                        <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    <!-- CTA Button -->
+                    <div class="hidden md:block">
+                        <a href="contact.html"
+                            class="inline-flex items-center justify-center h-10 px-6 font-bold text-sm text-white transition-colors bg-primary rounded-lg hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
+                            <span class="mr-2">Hubungi Kami</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <button
+                        class="md:hidden p-2 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="relative w-full bg-slate-900 text-white py-24 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBekGpx0TXWJiPk4hyb9vinPJCNaH-5iPByCTrWnJUZQGIgf3_kqIPK6M_Rm_tVGDsDPyrg5CPWWVYrV5KQENqsulVI2Ykdr4K47qzdcABRcXUjdlu_PV8PYWM4y4HkbMIpSu1PlYbWi6eKewZzJQQhshwvkL6Suyhvwv58gLJ5dSbZLjZVBqgn1XauAPd4AFpAXKye6X-PF-_El4NRdKkqQJLCND6GyBore4J8Xmd8XEip_eRzi3u-aV9Jxxf9xJmLFzM_L-DS_eg'); background-size: cover; background-position: center;">
+            </div>
+            <div class="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/30 text-white text-xs font-bold tracking-wide mb-6 uppercase">
+                    Tentang Perusahaan
+                </span>
+                <h1 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Tentang Kami</h1>
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+                    Membangun kepercayaan melalui kualitas dan layanan terbaik sejak lebih dari satu dekade
+                </p>
+            </div>
+        </section>
+
+        <!-- Company Overview -->
+        <section class="py-20 bg-white dark:bg-background-dark">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-primary font-bold text-sm uppercase tracking-wider mb-4 block">Profil
+                            Perusahaan</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+                            Mitra Terpercaya dalam Penyediaan Material Konstruksi</h2>
+                        <div class="prose prose-slate dark:prose-invert max-w-none">
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+                                <strong>CV. Batu Usaha Mandiri</strong> adalah perusahaan yang bergerak di bidang
+                                penyediaan material
+                                konstruksi berkualitas tinggi. Sejak didirikan pada tahun 2013, kami telah melayani
+                                ribuan proyek
+                                konstruksi mulai dari skala kecil hingga proyek infrastruktur besar.
+                            </p>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+                                Kami fokus pada tiga produk utama: <strong>Paving Block</strong>, <strong>Pasir
+                                    Split</strong>, dan
+                                <strong>Batu Split</strong>, yang telah digunakan dalam berbagai proyek pembangunan
+                                perumahan,
+                                jalan raya, area komersial, dan infrastruktur publik di seluruh Indonesia.
+                            </p>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Dengan komitmen terhadap kualitas, ketepatan waktu pengiriman, dan harga yang
+                                kompetitif, kami terus
+                                tumbuh menjadi salah satu supplier material konstruksi yang paling dipercaya di
+                                kawasan industri.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-8 border-white dark:border-slate-800">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBekGpx0TXWJiPk4hyb9vinPJCNaH-5iPByCTrWnJUZQGIgf3_kqIPK6M_Rm_tVGDsDPyrg5CPWWVYrV5KQENqsulVI2Ykdr4K47qzdcABRcXUjdlu_PV8PYWM4y4HkbMIpSu1PlYbWi6eKewZzJQQhshwvkL6Suyhvwv58gLJ5dSbZLjZVBqgn1XauAPd4AFpAXKye6X-PF-_El4NRdKkqQJLCND6GyBore4J8Xmd8XEip_eRzi3u-aV9Jxxf9xJmLFzM_L-DS_eg"
+                                alt="Construction site overview" class="w-full h-full object-cover" />
+                        </div>
+                        <div
+                            class="absolute -bottom-8 -right-8 bg-primary text-white p-8 rounded-xl shadow-xl max-w-[200px]">
+                            <div class="text-4xl font-black mb-2">10+</div>
+                            <div class="text-sm font-medium">Tahun Pengalaman di Industri Konstruksi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission -->
+        <section class="py-20 bg-background-light dark:bg-[#0b1219]">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Visi & Misi</h2>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        Fondasi nilai yang mengarahkan setiap langkah kami dalam melayani industri konstruksi
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Vision Card -->
+                    <div
+                        class="bg-white dark:bg-slate-800 rounded-2xl p-10 shadow-lg border border-slate-200 dark:border-slate-700">
+                        <div
+                            class="w-16 h-16 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-4xl">visibility</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Visi Kami</h3>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
+                            Menjadi perusahaan penyedia material konstruksi terdepan dan terpercaya di Indonesia dengan
+                            standar kualitas
+                            internasional, mendukung pembangunan infrastruktur berkelanjutan untuk masa depan yang
+                            lebih baik.
+                        </p>
+                    </div>
+                    <!-- Mission Card -->
+                    <div
+                        class="bg-white dark:bg-slate-800 rounded-2xl p-10 shadow-lg border border-slate-200 dark:border-slate-700">
+                        <div
+                            class="w-16 h-16 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-4xl">flag</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Misi Kami</h3>
+                        <ul class="space-y-3 text-slate-600 dark:text-slate-400">
+                            <li class="flex items-start gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5">check_circle</span>
+                                <span>Menyediakan material konstruksi berkualitas tinggi dengan harga yang
+                                    kompetitif</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5">check_circle</span>
+                                <span>Memberikan layanan pengiriman yang cepat, tepat waktu, dan dapat
+                                    diandalkan</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5">check_circle</span>
+                                <span>Membangun kemitraan jangka panjang dengan pelanggan melalui kepercayaan dan
+                                    integritas</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5">check_circle</span>
+                                <span>Terus berinovasi dan meningkatkan standar kualitas produk dan layanan</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Journey / Timeline -->
+        <section class="py-20 bg-white dark:bg-background-dark">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Perjalanan Kami</h2>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        Meniti langkah demi langkah, mengukir prestasi di industri material konstruksi
+                    </p>
+                </div>
+
+                <!-- Timeline -->
+                <div class="relative">
+                    <!-- Vertical Line -->
+                    <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-slate-200 dark:bg-slate-700">
+                    </div>
+
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <!-- 2013 -->
+                        <div class="relative flex items-center md:justify-start">
+                            <div class="md:w-1/2 md:pr-12 md:text-right">
+                                <div
+                                    class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6 shadow-md border border-slate-200 dark:border-slate-700">
+                                    <div class="text-primary font-bold text-lg mb-2">2013</div>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Awal Mula
+                                        Berdiri</h3>
+                                    <p class="text-slate-600 dark:text-slate-400">CV. Batu Usaha Mandiri didirikan
+                                        dengan visi menjadi
+                                        supplier material konstruksi terpercaya. Memulai dengan satu truk dan tim kecil
+                                        yang berdedikasi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white dark:border-background-dark items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-sm">rocket_launch</span>
+                            </div>
+                            <div class="hidden md:block md:w-1/2"></div>
+                        </div>
+
+                        <!-- 2015 -->
+                        <div class="relative flex items-center md:justify-end">
+                            <div class="hidden md:block md:w-1/2"></div>
+                            <div
+                                class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white dark:border-background-dark items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-sm">factory</span>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <div
+                                    class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6 shadow-md border border-slate-200 dark:border-slate-700">
+                                    <div class="text-primary font-bold text-lg mb-2">2015</div>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Ekspansi Pertama
+                                    </h3>
+                                    <p class="text-slate-600 dark:text-slate-400">Membuka fasilitas produksi paving
+                                        block sendiri dan
+                                        menambah armada pengiriman. Berhasil melayani 50+ proyek konstruksi di Jakarta
+                                        dan sekitarnya.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2018 -->
+                        <div class="relative flex items-center md:justify-start">
+                            <div class="md:w-1/2 md:pr-12 md:text-right">
+                                <div
+                                    class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6 shadow-md border border-slate-200 dark:border-slate-700">
+                                    <div class="text-primary font-bold text-lg mb-2">2018</div>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Sertifikasi
+                                        Standar Nasional</h3>
+                                    <p class="text-slate-600 dark:text-slate-400">Memperoleh sertifikasi SNI untuk
+                                        produk paving block dan
+                                        batu split. Memperkuat komitmen kami terhadap kualitas dan standar industri.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white dark:border-background-dark items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-sm">verified</span>
+                            </div>
+                            <div class="hidden md:block md:w-1/2"></div>
+                        </div>
+
+                        <!-- 2020 -->
+                        <div class="relative flex items-center md:justify-end">
+                            <div class="hidden md:block md:w-1/2"></div>
+                            <div
+                                class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white dark:border-background-dark items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-sm">public</span>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <div
+                                    class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6 shadow-md border border-slate-200 dark:border-slate-700">
+                                    <div class="text-primary font-bold text-lg mb-2">2020</div>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Jangkauan
+                                        Nasional</h3>
+                                    <p class="text-slate-600 dark:text-slate-400">Memperluas jaringan distribusi ke
+                                        seluruh Jawa dan
+                                        Sumatera. Kini melayani lebih dari 200 proyek per tahun dengan tim
+                                        profesional.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2023 -->
+                        <div class="relative flex items-center md:justify-start">
+                            <div class="md:w-1/2 md:pr-12 md:text-right">
+                                <div
+                                    class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6 shadow-md border border-slate-200 dark:border-slate-700">
+                                    <div class="text-primary font-bold text-lg mb-2">2023</div>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Pencapaian 10
+                                        Tahun</h3>
+                                    <p class="text-slate-600 dark:text-slate-400">Merayakan satu dekade pelayanan
+                                        dengan 500+ proyek
+                                        selesai, 50+ mitra perusahaan, dan kepercayaan yang terus tumbuh dari
+                                        pelanggan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white dark:border-background-dark items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-sm">celebration</span>
+                            </div>
+                            <div class="hidden md:block md:w-1/2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values -->
+        <section class="py-20 bg-background-light dark:bg-[#0b1219]">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Nilai-Nilai Kami
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        Prinsip yang kami pegang teguh dalam setiap interaksi bisnis
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Value 1 -->
+                    <div
+                        class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg transition-shadow">
+                        <div
+                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-3xl">workspace_premium</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Kualitas</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Tidak ada kompromi dalam standar
+                            kualitas produk kami</p>
+                    </div>
+                    <!-- Value 2 -->
+                    <div
+                        class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg transition-shadow">
+                        <div
+                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-3xl">handshake</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Integritas</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Transparansi dan kejujuran dalam setiap
+                            transaksi</p>
+                    </div>
+                    <!-- Value 3 -->
+                    <div
+                        class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg transition-shadow">
+                        <div
+                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-3xl">flash_on</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Responsif</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Cepat tanggap terhadap kebutuhan
+                            pelanggan</p>
+                    </div>
+                    <!-- Value 4 -->
+                    <div
+                        class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg transition-shadow">
+                        <div
+                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-3xl">psychology</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Inovatif</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Terus berkembang mengikuti kebutuhan
+                            industri</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-primary text-white">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Mari Berkolaborasi untuk Proyek Anda</h2>
+                <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+                    Dapatkan penawaran terbaik dan konsultasi gratis untuk kebutuhan material konstruksi Anda
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-white text-primary font-bold hover:bg-slate-100 transition-all">
+                        <span class="material-symbols-outlined mr-2">contact_support</span>
+                        Hubungi Kami
+                    </a>
+                    <a href="products.html"
+                        class="inline-flex items-center justify-center h-12 px-8 rounded-lg border-2 border-white text-white font-bold hover:bg-white/10 transition-all">
+                        Lihat Produk
+                        <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="bg-background-light dark:bg-[#0b1219] pt-16 pb-8 border-t border-slate-200 dark:border-slate-800">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <!-- Brand Column -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="flex items-center justify-center w-8 h-8 rounded-md bg-primary text-white">
+                                <span class="material-symbols-outlined text-lg">construction</span>
+                            </div>
+                            <h2 class="text-lg font-bold text-slate-900 dark:text-white">CV. Batu Usaha Mandiri</h2>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Mitra terpercaya dalam penyediaan material konstruksi berkualitas.
+                        </p>
+                    </div>
+                    <!-- Links Column -->
+                    <div>
+                        <h3 class="text-slate-900 dark:text-white font-bold mb-6">Navigasi</h3>
+                        <ul class="flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-400">
+                            <li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="about.html">Tentang Kami</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="products.html">Produk</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="contact.html">Kontak</a></li>
+                        </ul>
+                    </div>
+                    <!-- Products Column -->
+                    <div>
+                        <h3 class="text-slate-900 dark:text-white font-bold mb-6">Produk</h3>
+                        <ul class="flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-400">
+                            <li><a class="hover:text-primary transition-colors" href="products.html">Paving Block</a>
+                            </li>
+                            <li><a class="hover:text-primary transition-colors" href="products.html">Pasir Split</a>
+                            </li>
+                            <li><a class="hover:text-primary transition-colors" href="products.html">Batu Split</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Column -->
+                    <div>
+                        <h3 class="text-slate-900 dark:text-white font-bold mb-6">Kontak</h3>
+                        <ul class="flex flex-col gap-4 text-sm text-slate-600 dark:text-slate-400">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">location_on</span>
+                                <span>Jl. Raya Industri No. 123, Jakarta Timur</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">call</span>
+                                <span>(021) 456-7890</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">mail</span>
+                                <span>info@batuusahamandiri.id</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-500">
+                    <p>© 2024 CV. Batu Usaha Mandiri. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

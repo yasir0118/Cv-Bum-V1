@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Produk Kami - CV. Batu Usaha Mandiri</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <!-- Material Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0f65bd",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden">
+    <div class="relative flex flex-col min-h-screen w-full">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Logo Section -->
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-white">
+                            <span class="material-symbols-outlined text-2xl">construction</span>
+                        </div>
+                        <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+                            CV. Batu Usaha Mandiri
+                        </h1>
+                    </div>
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                            href="index.html">Home</a>
+                        <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                            href="about.html">About Us</a>
+                        <a class="text-sm font-medium text-primary dark:text-primary transition-colors"
+                            href="products.html">Produk</a>
+                        <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    <!-- CTA Button -->
+                    <div class="hidden md:block">
+                        <a href="contact.html"
+                            class="inline-flex items-center justify-center h-10 px-6 font-bold text-sm text-white transition-colors bg-primary rounded-lg hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
+                            <span class="mr-2">Hubungi Kami</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <button
+                        class="md:hidden p-2 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="relative w-full bg-slate-900 text-white py-24 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
+            <div class="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/30 text-white text-xs font-bold tracking-wide mb-6 uppercase">
+                    Katalog Produk
+                </span>
+                <h1 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Produk Kami</h1>
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+                    Material konstruksi berkualitas premium untuk membangun fondasi proyek yang kokoh dan terpercaya
+                </p>
+            </div>
+        </section>
+
+        <!-- Product Categories Filter (Optional) -->
+        <section class="py-8 bg-white dark:bg-background-dark border-b border-slate-200 dark:border-slate-700">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button
+                        class="px-6 py-2 rounded-full bg-primary text-white font-semibold text-sm transition-all hover:bg-primary-dark">
+                        Semua Produk
+                    </button>
+                    <button
+                        class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-sm transition-all hover:bg-slate-200 dark:hover:bg-slate-700">
+                        Paving Block
+                    </button>
+                    <button
+                        class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-sm transition-all hover:bg-slate-200 dark:hover:bg-slate-700">
+                        Pasir
+                    </button>
+                    <button
+                        class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-sm transition-all hover:bg-slate-200 dark:hover:bg-slate-700">
+                        Batu Split
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="py-20 bg-background-light dark:bg-[#0b1219]">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Title -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Paving Block</h2>
+                    <p class="text-slate-600 dark:text-slate-400">
+                        Berbagai pilihan paving block untuk aplikasi jalan, taman, dan area parkir
+                    </p>
+                </div>
+
+                <!-- Paving Block Products -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                    <!-- Product 1 -->
+                    <div
+                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img alt="Paving block Holland model abu-abu"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVyfrRJ85wZrnmOB2J2z-9U-z9yVCmR2mFozuuqvjrCe3LCTHHKpt3oWsWvkQdEV5Hojhf93jkMCAek8GrCF9_DTxc8PPYMEwhSVUKsdK_G6N4smtN_0ukNt51DUumJNSyJTAodjrVxFOm8yvEtUM1GMyt67Z2HwsjpbTEfkiTBNagVeHAkEAWIBxdy4qfChVvjpYHRm9txFl0TOuZqxGj7bazyyEwg6FLwmA7h_WbpnFk3YOg9PCI9RiA_ziipXAJESry9Kw36bs" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold">
+                                Terlaris
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Paving Block Holland</h3>
+                                <span class="material-symbols-outlined text-primary">grid_view</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                                Model klasik dengan interlocking kuat, cocok untuk jalan perumahan dan area parkir
+                            </p>
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">straighten</span>
+                                    <span>Ukuran: 20cm x 10cm x 6cm</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">palette</span>
+                                    <span>Warna: Abu-abu, Hitam, Merah</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">inventory_2</span>
+                                    <span>Per box: 50 pcs</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Mulai dari</span>
+                                    <div class="text-2xl font-bold text-primary">Rp 75.000</div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">/m²</span>
+                                </div>
+                                <button
+                                    class="px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all">
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div
+                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img alt="Paving block hexagon pattern"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVyfrRJ85wZrnmOB2J2z-9U-z9yVCmR2mFozuuqvjrCe3LCTHHKpt3oWsWvkQdEV5Hojhf93jkMCAek8GrCF9_DTxc8PPYMEwhSVUKsdK_G6N4smtN_0ukNt51DUumJNSyJTAodjrVxFOm8yvEtUM1GMyt67Z2HwsjpbTEfkiTBNagVeHAkEAWIBxdy4qfChVvjpYHRm9txFl0TOuZqxGj7bazyyEwg6FLwmA7h_WbpnFk3YOg9PCI9RiA_ziipXAJESry9Kw36bs" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Paving Block Hexagon</h3>
+                                <span class="material-symbols-outlined text-primary">change_history</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                                Desain modern dengan pola heksagonal, memberikan tampilan estetis yang unik
+                            </p>
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">straighten</span>
+                                    <span>Ukuran: 20cm x 17cm x 6cm</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">palette</span>
+                                    <span>Warna: Abu-abu, Kuning, Cokelat</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">inventory_2</span>
+                                    <span>Per box: 45 pcs</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Mulai dari</span>
+                                    <div class="text-2xl font-bold text-primary">Rp 85.000</div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">/m²</span>
+                                </div>
+                                <button
+                                    class="px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all">
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div
+                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img alt="Paving block grass block with holes"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVyfrRJ85wZrnmOB2J2z-9U-z9yVCmR2mFozuuqvjrCe3LCTHHKpt3oWsWvkQdEV5Hojhf93jkMCAek8GrCF9_DTxc8PPYMEwhSVUKsdK_G6N4smtN_0ukNt51DUumJNSyJTAodjrVxFOm8yvEtUM1GMyt67Z2HwsjpbTEfkiTBNagVeHAkEAWIBxdy4qfChVvjpYHRm9txFl0TOuZqxGj7bazyyEwg6FLwmA7h_WbpnFk3YOg9PCI9RiA_ziipXAJESry9Kw36bs" />
+                            <div
+                                class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                Eco-Friendly
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Paving Block Grass</h3>
+                                <span class="material-symbols-outlined text-primary">eco</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                                Dengan lubang untuk rumput, ramah lingkungan dan menyerap air hujan
+                            </p>
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">straighten</span>
+                                    <span>Ukuran: 40cm x 60cm x 8cm</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">palette</span>
+                                    <span>Warna: Abu-abu Natural</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">inventory_2</span>
+                                    <span>Per box: 25 pcs</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Mulai dari</span>
+                                    <div class="text-2xl font-bold text-primary">Rp 95.000</div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">/m²</span>
+                                </div>
+                                <button
+                                    class="px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all">
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pasir Products -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Pasir</h2>
+                    <p class="text-slate-600 dark:text-slate-400">
+                        Pasir berkualitas untuk berbagai kebutuhan konstruksi
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                    <!-- Product 4 -->
+                    <div
+                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img alt="Clean construction sand pile"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUYgEYE2jP4X8nFVsch4IZ9g0528fsexNUNt2_Ao1bvTiLa2Gbxhz7e4c6iCaxDqm1UqV4mbVUxbpIkepcABPdU-dSA73RdWYyrRrex0HJuvqN0pWR6AgdrkbVzRaQOdgwZQ2qEdSb-VJGctnWTBGbLajLz6Dbg3vHSxWpVjM4exCqwaM74hCAu6qg2Y447TsLfwVp83A0QNwrdMllRC-5zZ5LFuyAHhhO7PpmGq7Qnt7WTRWhJOUveIhvSbuw-_CQOUBvZRPmLus" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold">
+                                Terlaris
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Pasir Split</h3>
+                                <span class="material-symbols-outlined text-primary">grain</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                                Pasir beton berkualitas dengan butiran tajam, ideal untuk campuran beton cor
+                            </p>
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">opacity</span>
+                                    <span>Kadar Lumpur: < 5%</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">filter_list</span>
+                                    <span>Ukuran Butir: 0.5 - 5mm</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">local_shipping</span>
+                                    <span>Min. Order: 1 Dump Truck</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Mulai dari</span>
+                                    <div class="text-2xl font-bold text-primary">Rp 350.000</div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">/m³</span>
+                                </div>
+                                <button
+                                    class="px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all">
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div
+                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img alt="Yellow sand for construction"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUYgEYE2jP4X8nFVsch4IZ9g0528fsexNUNt2_Ao1bvTiLa2Gbxhz7e4c6iCaxDqm1UqV4mbVUxbpIkepcABPdU-dSA73RdWYyrRrex0HJuvqN0pWR6AgdrkbVzRaQOdgwZQ2qEdSb-VJGctnWTBGbLajLz6Dbg3vHSxWpVjM4exCqwaM74hCAu6qg2Y447TsLfwVp83A0QNwrdMllRC-5zZ5LFuyAHhhO7PpmGq7Qnt7WTRWhJOUveIhvSbuw-_CQOUBvZRPmLus" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Pasir Cor</h3>
+                                <span class="material-symbols-outlined text-primary">grain</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                                Pasir halus untuk kebutuhan pengecoran dan plesteran dinding
+                            </p>
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">opacity</span>
+                                    <span>Kadar Lumpur: < 3%</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">filter_list</span>
+                                    <span>Ukuran Butir: 0.2 - 2mm</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">local_shipping</span>
+                                    <span>Min. Order: 1 Dump Truck</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Mulai dari</span>
+                                    <div class="text-2xl font-bold text-primary">Rp 320.000</div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">/m³</span>
+                                </div>
+                                <button
+                                    class="px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all">
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div
+                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img alt="Red sand material"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUYgEYE2jP4X8nFVsch4IZ9g0528fsexNUNt2_Ao1bvTiLa2Gbxhz7e4c6iCaxDqm1UqV4mbVUxbpIkepcABPdU-dSA73RdWYyrRrex0HJuvqN0pWR6AgdrkbVzRaQOdgwZQ2qEdSb-VJGctnWTBGbLajLz6Dbg3vHSxWpVjM4exCqwaM74hCAu6qg2Y447TsLfwVp83A0QNwrdMllRC-5zZ5LFuyAHhhO7PpmGq7Qnt7WTRWhJOUveIhvSbuw-_CQOUBvZRPmLus" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Pasir Urug</h3>
+                                <span class="material-symbols-outlined text-primary">landscape</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                                Untuk pengurugan tanah, perataan lahan, dan dasar pondasi
+                            </p>
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">opacity</span>
+                                    <span>Kadar Lumpur: Standar</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">filter_list</span>
+                                    <span>Ukuran Butir: Bervariasi</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">local_shipping</span>
+                                    <span>Min. Order: 1 Dump Truck</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Mulai dari</span>
+                                    <div class="text-2xl font-bold text-primary">Rp 250.000</div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">/m³</span>
+                                </div>
+                                <button
+                                    class="px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all">
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Batu Split Products -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Batu Split</h2>
+                    <p class="text-slate-600 dark:text-slate-400">
+                        Agregat kasar untuk konstruksi beton berkekuatan tinggi
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product 7 -->
+                    <div
+                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img alt="Crushed stone aggregate"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8W0cqSZnaXGtT24_Om5Frzx1YnOHk69wIqXhyizEroXptO3UO1BP8B6e97gbKdeGhDragHnf_mgPhk-oKvV610ehdBEXCxFXgL6At2Db9i0pYonSG9oIUKmdAByM6T1ftCydvx2L_KUwnnY0oLqrFRbha_NDvNuPsYyKDrUZF-IwIV06H4c0m9OOkFZElqN1pd9OSyyP5g-LyWOybVFZmXU8cec81SHX3hBEeNYkPHGBjfeL9AqzQYkgq2lT9nm-nS1LJXr_kHXs" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold">
+                                Terlaris
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Batu Split 1/2</h3>
+                                <span class="material-symbols-outlined text-primary">terrain</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                                Ukuran 1-2 cm, paling umum digunakan untuk beton bertulang dan jalan raya
+                            </p>
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">straighten</span>
+                                    <span>Ukuran: 1 - 2 cm</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">science</span>
+                                    <span>Kekuatan: Grade A</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">local_shipping</span>
+                                    <span>Min. Order: 1 Dump Truck</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Mulai dari</span>
+                                    <div class="text-2xl font-bold text-primary">Rp 380.000</div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">/m³</span>
+                                </div>
+                                <button
+                                    class="px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all">
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div
+                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img alt="Larger crushed stone"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8W0cqSZnaXGtT24_Om5Frzx1YnOHk69wIqXhyizEroXptO3UO1BP8B6e97gbKdeGhDragHnf_mgPhk-oKvV610ehdBEXCxFXgL6At2Db9i0pYonSG9oIUKmdAByM6T1ftCydvx2L_KUwnnY0oLqrFRbha_NDvNuPsYyKDrUZF-IwIV06H4c0m9OOkFZElqN1pd9OSyyP5g-LyWOybVFZmXU8cec81SHX3hBEeNYkPHGBjfeL9AqzQYkgq2lT9nm-nS1LJXr_kHXs" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Batu Split 2/3</h3>
+                                <span class="material-symbols-outlined text-primary">terrain</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                                Ukuran 2-3 cm, cocok untuk pondasi bangunan dan pembangunan jalan
+                            </p>
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">straighten</span>
+                                    <span>Ukuran: 2 - 3 cm</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">science</span>
+                                    <span>Kekuatan: Grade A</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">local_shipping</span>
+                                    <span>Min. Order: 1 Dump Truck</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Mulai dari</span>
+                                    <div class="text-2xl font-bold text-primary">Rp 370.000</div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">/m³</span>
+                                </div>
+                                <button
+                                    class="px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all">
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div
+                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img alt="Fine crushed stone dust"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8W0cqSZnaXGtT24_Om5Frzx1YnOHk69wIqXhyizEroXptO3UO1BP8B6e97gbKdeGhDragHnf_mgPhk-oKvV610ehdBEXCxFXgL6At2Db9i0pYonSG9oIUKmdAByM6T1ftCydvx2L_KUwnnY0oLqrFRbha_NDvNuPsYyKDrUZF-IwIV06H4c0m9OOkFZElqN1pd9OSyyP5g-LyWOybVFZmXU8cec81SHX3hBEeNYkPHGBjfeL9AqzQYkgq2lT9nm-nS1LJXr_kHXs" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Abu Batu</h3>
+                                <span class="material-symbols-outlined text-primary">filter_alt</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                                Hasil ayakan batu split, bagus untuk dasar paving dan cor rabat
+                            </p>
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">straighten</span>
+                                    <span>Ukuran: 0.5 - 1 cm</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">science</span>
+                                    <span>Kepadatan: Tinggi</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-primary text-lg">local_shipping</span>
+                                    <span>Min. Order: 1 Dump Truck</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Mulai dari</span>
+                                    <div class="text-2xl font-bold text-primary">Rp 280.000</div>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">/m³</span>
+                                </div>
+                                <button
+                                    class="px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all">
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Our Products -->
+        <section class="py-20 bg-white dark:bg-background-dark">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Keunggulan Produk Kami</h2>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        Standar kualitas yang kami jaga untuk kepuasan Anda
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-3xl">verified</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Bersertifikat SNI</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Semua produk telah lulus uji standar
+                            nasional</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-3xl">science</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Teruji Lab</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Melewati pengujian laboratorium
+                            independen</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-3xl">inventory_2</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Stok Tersedia</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Persediaan selalu ready untuk kebutuhan
+                            Anda</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-3xl">local_shipping</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Free Delivery</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Gratis ongkir area tertentu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-primary text-white">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Butuh Konsultasi Produk?</h2>
+                <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+                    Tim ahli kami siap membantu Anda memilih material yang tepat untuk proyek Anda
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-white text-primary font-bold hover:bg-slate-100 transition-all">
+                        <span class="material-symbols-outlined mr-2">contact_support</span>
+                        Hubungi Kami
+                    </a>
+                    <a href="tel:+622145678900"
+                        class="inline-flex items-center justify-center h-12 px-8 rounded-lg border-2 border-white text-white font-bold hover:bg-white/10 transition-all">
+                        <span class="material-symbols-outlined mr-2">call</span>
+                        (021) 456-7890
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="bg-background-light dark:bg-[#0b1219] pt-16 pb-8 border-t border-slate-200 dark:border-slate-800">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <!-- Brand Column -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="flex items-center justify-center w-8 h-8 rounded-md bg-primary text-white">
+                                <span class="material-symbols-outlined text-lg">construction</span>
+                            </div>
+                            <h2 class="text-lg font-bold text-slate-900 dark:text-white">CV. Batu Usaha Mandiri</h2>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Mitra terpercaya dalam penyediaan material konstruksi berkualitas.
+                        </p>
+                    </div>
+                    <!-- Links Column -->
+                    <div>
+                        <h3 class="text-slate-900 dark:text-white font-bold mb-6">Navigasi</h3>
+                        <ul class="flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-400">
+                            <li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="about.html">Tentang Kami</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="products.html">Produk</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="contact.html">Kontak</a></li>
+                        </ul>
+                    </div>
+                    <!-- Products Column -->
+                    <div>
+                        <h3 class="text-slate-900 dark:text-white font-bold mb-6">Produk</h3>
+                        <ul class="flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-400">
+                            <li><a class="hover:text-primary transition-colors" href="#">Paving Block</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Pasir Split</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Batu Split</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Column -->
+                    <div>
+                        <h3 class="text-slate-900 dark:text-white font-bold mb-6">Kontak</h3>
+                        <ul class="flex flex-col gap-4 text-sm text-slate-600 dark:text-slate-400">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">location_on</span>
+                                <span>Jl. Raya Industri No. 123, Jakarta Timur</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">call</span>
+                                <span>(021) 456-7890</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl shrink-0">mail</span>
+                                <span>info@batuusahamandiri.id</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-500">
+                    <p>© 2024 CV. Batu Usaha Mandiri. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
