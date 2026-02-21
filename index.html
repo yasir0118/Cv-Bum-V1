@@ -33,6 +33,24 @@
             -webkit-font-feature-settings: 'liga';
             -webkit-font-smoothing: antialiased;
         }
+        
+        /* Carousel Animation */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        .carousel-track {
+            animation: scroll-left 30s linear infinite;
+        }
+        
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
     </style>
     <!-- Theme Configuration -->
     <script id="tailwind-config">
@@ -224,10 +242,13 @@
                         <span class="material-symbols-outlined ml-1 text-lg">arrow_right_alt</span>
                     </a>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Carousel Container -->
+                <div class="relative overflow-hidden">
+                    <div class="carousel-track flex gap-6 sm:gap-8">
                     <!-- Product Card 1 -->
                     <div
-                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
                         <div class="relative h-64 overflow-hidden">
                             <div
                                 class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors z-10">
@@ -254,7 +275,7 @@
                     </div>
                     <!-- Product Card 2 -->
                     <div
-                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
                         <div class="relative h-64 overflow-hidden">
                             <div
                                 class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors z-10">
@@ -281,7 +302,7 @@
                     </div>
                     <!-- Product Card 3 -->
                     <div
-                        class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
                         <div class="relative h-64 overflow-hidden">
                             <div
                                 class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors z-10">
@@ -306,6 +327,90 @@
                             </button>
                         </div>
                     </div>
+                    
+                    <!-- Duplicate cards for infinite scrolling -->
+                    <!-- Product Card 1 (Duplicate) -->
+                    <div
+                        class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors z-10">
+                            </div>
+                            <img alt="Stack of grey concrete paving blocks neatly arranged"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Paving blocks pattern texture"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVyfrRJ85wZrnmOB2J2z-9U-z9yVCmR2mFozuuqvjrCe3LCTHHKpt3oWsWvkQdEV5Hojhf93jkMCAek8GrCF9_DTxc8PPYMEwhSVUKsdK_G6N4smtN_0ukNt51DUumJNSyJTAodjrVxFOm8yvEtUM1GMyt67Z2HwsjpbTEfkiTBNagVeHAkEAWIBxdy4qfChVvjpYHRm9txFl0TOuZqxGj7bazyyEwg6FLwmA7h_WbpnFk3YOg9PCI9RiA_ziipXAJESry9Kw36bs" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Paving Block</h3>
+                                <span class="material-symbols-outlined text-primary">grid_view</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+                                Solusi perkerasan jalan yang estetis dan tahan lama. Ideal untuk halaman rumah, taman,
+                                area parkir, dan jalan lingkungan. Tersedia berbagai model.
+                            </p>
+                            <button
+                                class="w-full py-3 rounded-lg border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-semibold text-sm hover:bg-primary hover:text-white hover:border-primary dark:hover:border-primary transition-all">
+                                Detail Spesifikasi
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 (Duplicate) -->
+                    <div
+                        class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors z-10">
+                            </div>
+                            <img alt="Heap of construction sand at a site"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Pile of construction sand"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUYgEYE2jP4X8nFVsch4IZ9g0528fsexNUNt2_Ao1bvTiLa2Gbxhz7e4c6iCaxDqm1UqV4mbVUxbpIkepcABPdU-dSA73RdWYyrRrex0HJuvqN0pWR6AgdrkbVzRaQOdgwZQ2qEdSb-VJGctnWTBGbLajLz6Dbg3vHSxWpVjM4exCqwaM74hCAu6qg2Y447TsLfwVp83A0QNwrdMllRC-5zZ5LFuyAHhhO7PpmGq7Qnt7WTRWhJOUveIhvSbuw-_CQOUBvZRPmLus" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Pasir Split</h3>
+                                <span class="material-symbols-outlined text-primary">grain</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+                                Pasir beton berkualitas tinggi dengan butiran tajam dan bersih. Sangat cocok untuk
+                                campuran beton cor yang kuat dan plesteran dinding halus.
+                            </p>
+                            <button
+                                class="w-full py-3 rounded-lg border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-semibold text-sm hover:bg-primary hover:text-white hover:border-primary dark:hover:border-primary transition-all">
+                                Detail Spesifikasi
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 (Duplicate) -->
+                    <div
+                        class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors z-10">
+                            </div>
+                            <img alt="Pile of crushed stones or gravel"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Crushed stone gravel texture"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8W0cqSZnaXGtT24_Om5Frzx1YnOHk69wIqXhyizEroXptO3UO1BP8B6e97gbKdeGhDragHnf_mgPhk-oKvV610ehdBEXCxFXgL6At2Db9i0pYonSG9oIUKmdAByM6T1ftCydvx2L_KUwnnY0oLqrFRbha_NDvNuPsYyKDrUZF-IwIV06H4c0m9OOkFZElqN1pd9OSyyP5g-LyWOybVFZmXU8cec81SHX3hBEeNYkPHGBjfeL9AqzQYkgq2lT9nm-nS1LJXr_kHXs" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Batu Split</h3>
+                                <span class="material-symbols-outlined text-primary">terrain</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+                                Batu pecah premium dengan kekerasan optimal. Komponen utama untuk pengecoran pondasi,
+                                jalan raya, bantalan kereta api, dan beton bertulang.
+                            </p>
+                            <button
+                                class="w-full py-3 rounded-lg border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-semibold text-sm hover:bg-primary hover:text-white hover:border-primary dark:hover:border-primary transition-all">
+                                Detail Spesifikasi
+                            </button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
                 <div class="mt-8 text-center md:hidden">
                     <a class="inline-flex items-center font-bold text-primary hover:text-primary-dark transition-colors"
@@ -317,7 +422,7 @@
             </div>
         </section>
         <!-- Stats Section -->
-        <section class="bg-primary text-white py-12 sm:py-16">
+        <section class="bg-primary text-white py-16 sm:py-20 md:py-24">
             <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
                     <div class="p-2 sm:p-4">
@@ -340,7 +445,7 @@
             </div>
         </section>
         <!-- Contact CTA Section -->
-        <section class=\"py-16 sm:py-20 md:py-24 bg-white dark:bg-background-dark relative overflow-hidden\" id=\"contact\">
+        <section class="py-20 sm:py-24 md:py-28 bg-white dark:bg-background-dark relative overflow-hidden" id="contact">
             <!-- Decorative background elements -->
             <div
                 class=\"absolute top-0 right-0 w-1/3 h-full bg-slate-50 dark:bg-slate-800/30 -skew-x-12 translate-x-1/4 hidden md:block\">
